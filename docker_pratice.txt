@@ -1,0 +1,24 @@
+1. Docker container run -d -it tomcat > docker demon will check for tomcat image locally and if not available it will pull from docker hub.
+2. Docker container ps -a > it shows all the running and exited containers.
+3. Docker container ps > it shows only the running containers.
+4. docker container run - d -it - centos:7  > docker creates a container of Centos version 7 
+5. docker container run  -it - centos:7 bash > docker opens a terminal for Container created. 
+6. docker container start <container_id> ~ docker starts the container which is stopped earlier
+7. docker container ls -a --n-trunc ~ it prints complete 64 characters of container id.
+8. docker container ls -a -q ~ it prints only the container id
+9. docker container ls -l ~ it provides latest container details available.
+10.docker container ls -a --filter "Exited=0" ~ it filters the containers having status 'exited 0'
+11.docker container logs <container_id> ~ it provides logs of the container.
+12.docker container logs --tail 5 <container_id> ~ it provides the last 5 logs
+13.docker container logs -f <container_id> ~ it provides complete list of logs.
+14.docker container stop <container_id> ~ it stops the container id and then kill it
+15.docker contianer kill <container_id> ~  it kills the pid directly
+16.docker container inspect <container_id> ~ it provides the complete low level inforamtion of the container.
+17.docker container rm <container_id> ~ it removes or delete the container
+18.docker container rm -f <container_id> ~ it forcefully kill and remove the running container.
+19.docker container commit <container_id> <image name> ~ it creates a new image
+20.docker images ~ it displays available images in local
+21.docker pull centos:8 ~ pull command helps us to get the required image from dockerhub.
+22.docker image tag <image name> <tag name> ~ this command assign a tag name to image.
+23.docker image push <docker id>/my-centos:10 ~ first need to provide docker login, once connected executing the command will add image to docker hub.
+
